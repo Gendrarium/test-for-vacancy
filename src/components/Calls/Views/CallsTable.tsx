@@ -4,10 +4,7 @@ import CallsArrowIcon from '@assets/icons/Calls/CallsArrowIcon';
 import CallsFromSiteIcon from '@assets/icons/Calls/CallsFromSiteIcon';
 import { ICallsResults } from '@interfaces/api';
 import { getCallAudio } from '@redux/page/actions';
-import {
-  selectCallsTotalRow,
-  selectIsCallsFetching,
-} from '@redux/page/selectors';
+import { selectCallsTotalRow } from '@redux/page/selectors';
 import { useAppDispatch, useAppSelector } from '@redux/store';
 import { formatTime } from '@utils/functions';
 import InfiniteScroll from 'react-infinite-scroll-component';
