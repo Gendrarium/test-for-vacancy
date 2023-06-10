@@ -47,8 +47,7 @@ export const getCallAudio = ({
 }) => {
   console.log(record, partnershipId);
   return fetch(
-    'http://localhost:5000/signup',
-    // `${BASE_URL}/getRecord?record=${record}&partnership_id=${partnershipId}`,
+    `${BASE_URL}/getRecord?record=${record}&partnership_id=${partnershipId}`,
     {
       method: 'POST',
       headers: {
