@@ -1,0 +1,58 @@
+.calls-pb {
+  display: flex;
+  flex-direction: column;
+  max-width: 165px;
+  justify-content: space-between;
+  // margin-right: 57px;
+  margin-right: 2.9vw;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-text;
+    margin-bottom: 10px;
+  }
+
+  &__span {
+    &_green {
+      color: $color-text-green;
+    }
+
+    &_red {
+      color: $color-red;
+    }
+
+    &_yellow {
+      color: $color-text-yellow;
+    }
+  }
+
+  &__progress-container {
+    width: 156px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: #dee6f5;
+    overflow: hidden;
+  }
+
+  &__progress {
+    display: flex;
+    height: 100%;
+
+    &_green {
+      background-color: $color-green;
+    }
+
+    &_red {
+      background-color: $color-red;
+    }
+
+    &_yellow {
+      background-color: $color-yellow;
+    }
+  }
+}

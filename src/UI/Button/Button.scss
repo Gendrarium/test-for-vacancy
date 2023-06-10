@@ -1,0 +1,27 @@
+.button {
+  background-color: $color-accent-two;
+  color: $color-white;
+  width: 200px;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: $color-accent-hover;
+  }
+
+  &:active {
+    background-color: $color-accent-active;
+  }
+
+  &__span {
+    display: block;
+    flex: 1 1 auto;
+  }
+}

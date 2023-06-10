@@ -1,0 +1,45 @@
+.balance {
+  min-width: 100px;
+  min-height: 40px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: $color-white;
+  align-items: center;
+
+  &:hover &__span {
+    color: $color-accent-hover;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 10px;
+    color: $color-text-header;
+  }
+
+  &__span {
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-text;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .balance__button-icon-fill {
+      fill: $color-accent-hover;
+    }
+
+    &:active .balance__button-icon-fill {
+      fill: $color-accent-active;
+    }
+  }
+
+  &__button-icon-fill {
+    fill: $color-accent;
+  }
+}

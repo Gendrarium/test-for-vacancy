@@ -1,0 +1,21 @@
+@import './_normalize.css';
+@import './fonts/fonts';
+@import './variables';
+@import './mixins';
+@import './global';
+
+// Icons
+@import '@assets/icons/Logo/LogoIcon.scss';
+
+// UI
+@import '@UI/Button/Button.scss';
+@import '@UI/Checkbox/Checkbox.scss';
+@import '@UI/ProgressBar/ProgressBar.scss';
+@import '@UI/Balance/Balance.scss';
+@import '@UI/Calendar/Calendar.scss';
+@import '@UI/Menu/Menu.scss';
+
+// Components
+@import '@components/App/App.scss';
+@import '@components/NavPanel/NavPanel.scss';
+@import '@components/Calls/Calls.scss';

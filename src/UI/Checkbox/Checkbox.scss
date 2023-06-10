@@ -1,0 +1,32 @@
+.checkbox {
+  &:active &__span {
+    border: 2px solid $color-accent-active;
+    background: url(@assets/images/checkbox-icon.svg) center center/13px 9.5px
+      no-repeat $color-accent-active;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .checkbox__span {
+      border: 2px solid $color-accent;
+      background: url(@assets/images/checkbox-icon.svg) center center/13px 9.5px
+        no-repeat $color-accent;
+    }
+  }
+
+  &__span {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid $color-icon;
+    display: block;
+
+    &:hover {
+      border: 2px solid $color-accent;
+    }
+  }
+}

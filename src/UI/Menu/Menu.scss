@@ -1,0 +1,35 @@
+.menu {
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 4px 16px 50px 0px rgba(129, 135, 163, 0.24);
+  background-color: $color-white;
+  display: none;
+  min-width: 200px;
+  right: 0;
+  top: 100%;
+  overflow: hidden;
+  z-index: 5;
+
+  &__li {
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: rgba($color: $color-accent, $alpha: 0.13);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 15px;
+    color: $color-text-header;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

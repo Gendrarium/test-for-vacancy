@@ -1,0 +1,50 @@
+.calendar {
+  display: flex;
+  align-items: center;
+
+  &__arrow-button {
+    cursor: pointer;
+
+    &:hover .calendar__icon-fill {
+      fill: $color-accent;
+    }
+  }
+
+  &__arrow-icon {
+    width: 10px;
+    height: 7px;
+
+    &_left {
+      transform: rotate(90deg);
+    }
+
+    &_right {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__icon-fill {
+    fill: $color-icon;
+
+    &:hover {
+      fill: $color-accent;
+    }
+  }
+
+  &__container {
+    display: flex;
+    margin: 0 18px;
+    cursor: pointer;
+
+    &:hover .calendar__icon-fill {
+      fill: $color-accent;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-accent-two;
+  }
+}
